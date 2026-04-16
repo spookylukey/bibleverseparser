@@ -1,0 +1,52 @@
+[project]
+name = "bibleverseparser"
+version = "0.1.0"
+description = "Parse Bible verse references like 'Gen 1:1' to canonical form 'Genesis 1:1'"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Luke Plant", email = "luke@lukeplant.me.uk" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Religion",
+    "Topic :: Text Processing",
+    "Typing :: Typed",
+]
+dependencies = [
+    "parsy>=2.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/learnscripture/bibleverseparser"
+Repository = "https://github.com/learnscripture/bibleverseparser"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "pyright>=1.1.408",
+    "pytest>=9.0.3",
+    "ruff>=0.15.10",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.pyright]
+pythonVersion = "3.10"
+typeCheckingMode = "standard"
