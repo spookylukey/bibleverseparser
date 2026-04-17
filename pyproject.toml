@@ -1,6 +1,6 @@
 [project]
 name = "bibleverseparser"
-version = "0.1.0"
+version = "0.2"
 description = "Parse Bible verse references like 'Gen 1:1' to canonical form 'Genesis 1:1'"
 readme = "README.md"
 requires-python = ">=3.10"
