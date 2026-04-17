@@ -27,6 +27,7 @@ Repository = "https://github.com/learnscripture/bibleverseparser"
 
 [dependency-groups]
 dev = [
+    "ipython>=8.39.0",
     "pre-commit>=4.5.1",
     "pyright>=1.1.408",
     "pytest>=9.0.3",
